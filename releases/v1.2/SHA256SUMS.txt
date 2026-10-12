@@ -1,0 +1,2 @@
+e958c4a0819e4299ed8f2f067797f9dff3baa14e9220f9518fc839f9c77e38f7  linux/Morsetastic-V1.2-Linux-x86_64.zip
+0e275f810d1c6aaaf6c2995b2773e15f51dd64f92d2d8783bab89168fcc51823  windows/Morsetastic-V1.2-Windows-x86_64.zip
