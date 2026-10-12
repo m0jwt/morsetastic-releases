@@ -1,6 +1,6 @@
 # Morsetastic Downloads
 
-**Learn Morse. Keep your CW edge.**
+**Feel the rhythm of CW and learn to hear the melody of each character.**
 
 Morsetastic is a simple CW reception trainer for Linux and Windows. It helps
 beginners build confidence and experienced operators keep their reception sharp,
