@@ -17,10 +17,11 @@ version-specific ZIPs, notes and checksums. The same ZIPs are stored below, with
 one directory per version and separate `linux` and `windows` subdirectories.
 
 <!-- BEGIN RELEASE INDEX -->
-Latest: **V1.2**
+Latest: **V1.3**
 
 | Version | Linux x86-64 | Windows x86-64 | Notes |
 | --- | --- | --- | --- |
+| V1.3 | [ZIP](releases/v1.3/linux/Morsetastic-V1.3-Linux-x86_64.zip) | [ZIP](releases/v1.3/windows/Morsetastic-V1.3-Windows-x86_64.zip) | [Release notes](releases/v1.3/RELEASE_NOTES.md) |
 | V1.2 | [ZIP](releases/v1.2/linux/Morsetastic-V1.2-Linux-x86_64.zip) | [ZIP](releases/v1.2/windows/Morsetastic-V1.2-Windows-x86_64.zip) | [Release notes](releases/v1.2/RELEASE_NOTES.md) |
 <!-- END RELEASE INDEX -->
 

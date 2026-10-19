@@ -1,0 +1,41 @@
+{
+  "tag": "v1.3",
+  "packages": {
+    "linux": {
+      "version": "V1.3",
+      "source_commit": "f1f8165b618e77922855e5dd0fa1f4b7349995e5",
+      "build_date": "2026-10-20",
+      "production": true,
+      "platform": "linux",
+      "archive": "Morsetastic-V1.3-Linux-x86_64.zip",
+      "sha256": "3b654c0b1815c5ef60c5268c22c591b7007e2767727b40f7152a067b78bf0e8f",
+      "files": {
+        "morsetastic": "379af7ac5eff1fb5b0ed4c2579194f633be356d8940553add51493e1d921ebfc",
+        "default_words.txt": "1cc971b25c8029088512e3696003ede576770c7a7e42f1a6938f2eb97a457816",
+        "callsigns.txt": "3d57c4445738cfb34fe717913b5afd9eb08acd865011ebad8e12ab4abee2431e",
+        "words400.txt": "9385a217b9d1bd9a6a8af957bcc6967063d12c2ad59ff54be30242b85ea541fd",
+        "wyrazy100.txt": "f81c589c5d5b90334be6095dcc672bf939b402ce8dd5c48c12ade46e46b02cf8",
+        "wyrazy400.txt": "45fbde685c5c613f7f3dbd241ceccd2551c07e3ae05efec1f66c5a477e7c96de",
+        "languages/pl.json": "b355e7a3bcefca6b2384973d96521f945b9fe70709da91fd8eabb070b2cdb694"
+      }
+    },
+    "windows": {
+      "version": "V1.3",
+      "source_commit": "f1f8165b618e77922855e5dd0fa1f4b7349995e5",
+      "build_date": "2026-10-20",
+      "production": true,
+      "platform": "windows",
+      "archive": "Morsetastic-V1.3-Windows-x86_64.zip",
+      "sha256": "739b3a91cdcd4beda4666448e6b938856b9b318dd9828b63ad2167654deb8d9e",
+      "files": {
+        "morsetastic.exe": "7e9484ad87f06243d812e1899136a6cee8ca28ec935a0c84544c2091f7153902",
+        "default_words.txt": "1cc971b25c8029088512e3696003ede576770c7a7e42f1a6938f2eb97a457816",
+        "callsigns.txt": "3d57c4445738cfb34fe717913b5afd9eb08acd865011ebad8e12ab4abee2431e",
+        "words400.txt": "9385a217b9d1bd9a6a8af957bcc6967063d12c2ad59ff54be30242b85ea541fd",
+        "wyrazy100.txt": "f81c589c5d5b90334be6095dcc672bf939b402ce8dd5c48c12ade46e46b02cf8",
+        "wyrazy400.txt": "45fbde685c5c613f7f3dbd241ceccd2551c07e3ae05efec1f66c5a477e7c96de",
+        "languages/pl.json": "b355e7a3bcefca6b2384973d96521f945b9fe70709da91fd8eabb070b2cdb694"
+      }
+    }
+  }
+}
