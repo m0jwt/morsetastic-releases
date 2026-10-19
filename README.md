@@ -51,18 +51,4 @@ with exact source/file hashes and `SHA256SUMS.txt`. From a version directory,
 run `sha256sum -c SHA256SUMS.txt`. For separately downloaded ZIPs, compare
 `sha256sum <ZIP>` or Windows `Get-FileHash <ZIP> -Algorithm SHA256` with the list.
 
-## Publishing
-
-Published ZIPs and tags are not overwritten. A later patch gets a new directory
-and tag, for example `releases/v1.2.1/` and `v1.2.1`.
-
-The private source supplies the build-and-prepare script. After reviewing and
-testing the output, commit the version directory and README, create its annotated
-tag and push manually. The tag starts Publish Release: validation, draft creation,
-uploads and publication. Resume failed drafts through Actions > Publish Release
-> Run workflow with the same tag. Published releases cannot be replaced.
-
-Verification: `python3 -B tools/release.py verify --all`.
-Packaging checks: `python3 -B -m unittest discover -s tests -v`.
-
 Morsetastic is free to use, copy and share, and is provided as-is without warranty.
