@@ -1,8 +1,7 @@
 # Morsetastic V1.3
 
 This release combines character comparison lessons, appearance choices, more
-efficient GUI drawing and keyboard input fixes. The published V1.2 packages
-remain unchanged. V1.2.1 was an unpublished development version.
+efficient GUI drawing and keyboard input fixes.
 
 ## Held-Key Fix
 
@@ -33,37 +32,16 @@ remain unchanged. V1.2.1 was an unpublished development version.
 - Lessons are freely selectable comparison sets, not a compulsory learning order.
 - English and Polish Help explain the comparison method, the lesson families,
   choosing a comfortable speed and practising without automatic advancement.
-- `+(AR)` has no space between `+` and the bracket, with an overline on AR.
-  This denotes one character; the expected answer is still the single `+` key.
-- Default remains unchanged, with `+`, `@` and later symbols unchecked.
-- Existing profiles, custom selections, timing and language fallback are preserved.
 
 ## GUI Drawing Improvements
 
-- Track dirty and animating bars separately and repaint only affected columns.
-- Cache the chart for window restoration, using native paint bounds to limit
-  screen copies. Resize and font changes rebuild the chart as needed.
-- Replaying an unchanged prompt no longer repaints the chart. Stationary error
-  flashes repaint at their start and expiry, not on every timer tick.
-- Keep the existing gradients, highlights, animation rate and training behaviour.
-- Stop the animation timer once bars have settled. Idle bars no longer generate
-  continuous redraws, reducing unnecessary updates over remote desktop.
+- General GUI drawing improvements: only changed elements are redrawn,
+  reducing CPU use.
 
 ## Appearance
 
-- Configuration now offers System and Morsetastic (light blue), applied on OK
-  and saved per user. Cancel leaves both the appearance and saved file unchanged.
-- System uses native widget colours and a neutral chart, retaining red error
-  flashes and blue current-character indications. Copy text follows the system
-  foreground instead of forcing black text on every background.
-- Morsetastic retains reflective bars and light-blue controls with matched text
-  and readable selected rows, even when the desktop uses a dark theme.
-- Main, configuration, About, Help and statistics use the selected appearance.
-- Windows slider backgrounds match the system panel in System mode,
-  including after switching from light blue. Native slider handles keep their
-  system accent colour.
-- Existing profiles remain valid and keep the light-blue default. Audio, timing,
-  scoring and selective bar drawing are unchanged.
+- Choose between System colours and the Morsetastic light-blue theme in
+  Configuration. Your choice is saved.
 
 ## Stability
 
@@ -72,6 +50,3 @@ remain unchanged. V1.2.1 was an unpublished development version.
   or accumulating replays for a stopped audio worker. Start can retry the device.
 - Failed streams discard unplayable queued prompts; healthy playback keeps the
   complete current character and mandatory silence unchanged.
-- Regression coverage includes held keys, rapid separate key presses, focus
-  changes, audio failures and recovery, repeated repaint/resize activity and
-  convergence to an idle chart in both appearance modes.
