@@ -8,7 +8,7 @@ with focused practice in characters, groups, words and callsigns.
 
 This public repository contains production downloads and release automation
 only. Application source is kept separately in a private repository.
-Morsetastic starts at V1.2; previous MorseForge archives remain separate.
+The first Morsetastic release is V1.2.
 
 ## Downloads
 
@@ -43,8 +43,7 @@ Extract the entire ZIP into one folder; do not run from inside the ZIP.
   `chmod +x morsetastic` if your extractor removed execution permission.
 - Windows 11 x86-64: run `morsetastic.exe`. No extra audio DLL is required.
 
-Morsetastic saves a separate user profile. If none exists, valid MorseForge
-settings are used as a starting point without altering the old settings file.
+Morsetastic saves settings in its own per-user profile.
 
 About shows version, build date and checkpoint. Each release has `release.json`
 with exact source/file hashes and `SHA256SUMS.txt`. From a version directory,

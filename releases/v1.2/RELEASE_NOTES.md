@@ -10,10 +10,8 @@ with focused practice in characters, groups, words and callsigns.
 
 - New application name, window titles, English/Polish descriptions, help,
   About and reports. Executables are `morsetastic` and `morsetastic.exe`.
-- Independent source and public-download repositories starting at V1.2. The
-  original MorseForge project folders, binaries and archives are preserved.
-- Separate settings: valid MorseForge settings are read when no new profile
-  exists; saving never overwrites the original profile.
+- Independent source and public-download repositories starting at V1.2.
+- Separate per-user settings; saving never overwrites an imported profile.
 - English and Polish interface, including Configuration, messages and reports.
   English is compiled in. Missing, damaged or outdated catalogs fall back to
   English without losing practice settings; the authoring template is optional.
