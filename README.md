@@ -1,4 +1,4 @@
-# Morsetastic Downloads
+# Morsetastic CW Trainer
 
 **Feel the rhythm of CW and learn to hear the melody of each character.**
 
@@ -6,15 +6,16 @@ Morsetastic is a simple CW reception trainer for Linux and Windows. It helps
 beginners build confidence and experienced operators keep their reception sharp,
 with focused practice in characters, groups, words and callsigns.
 
-This public repository contains production downloads and release automation
-only. Application source is kept separately in a private repository.
-The first Morsetastic release is V1.2.
+The aim is simple: make CW practice feel less like a test and more like
+building a useful radio skill one sound at a time. Short, focused sessions help
+you recognise character rhythms and revisit the sounds that need more practice.
 
 ## Downloads
 
 [GitHub Releases](https://github.com/m0jwt/morsetastic-releases/releases) provide
 version-specific ZIPs, notes and checksums. The same ZIPs are stored below, with
 one directory per version and separate `linux` and `windows` subdirectories.
+Release notes describe the changes and details for each version.
 
 <!-- BEGIN RELEASE INDEX -->
 Latest: **V1.3**
@@ -27,27 +28,80 @@ Latest: **V1.3**
 
 ## Installation
 
-Each ZIP contains the executable and five practice files at its root:
-`default_words.txt`, `callsigns.txt`, `words400.txt`, `wyrazy100.txt` and
-`wyrazy400.txt`. Extra English/Polish word lists use plain alphabet letters for
-CW. Select a list with Configuration > Load word file.
-
-Polish interface text is in `languages/pl.json`. Keep the `languages` folder
-beside the executable and select English or Polski in Configuration. English is
-built in and works if that folder is missing or damaged. Translation templates
-and development source are not included in downloads.
-
-Extract the entire ZIP into one folder; do not run from inside the ZIP.
+Extract the entire ZIP into one folder. Keep the practice files and the
+`languages` folder beside the executable; do not run from inside the ZIP.
 
 - Linux x86-64: requires GTK3 and ALSA. Run `./morsetastic`; use
   `chmod +x morsetastic` if your extractor removed execution permission.
 - Windows 11 x86-64: run `morsetastic.exe`. No extra audio DLL is required.
 
-Morsetastic saves settings in its own per-user profile.
+Select English or Polski in Configuration. Polish interface text is supplied in
+`languages/pl.json`. English is built in and remains available if a translation
+file is missing or damaged. Morsetastic saves settings in its own per-user
+profile.
 
 About shows version, build date and checkpoint. Each release has `release.json`
 with exact source/file hashes and `SHA256SUMS.txt`. From a version directory,
 run `sha256sum -c SHA256SUMS.txt`. For separately downloaded ZIPs, compare
 `sha256sum <ZIP>` or Windows `Get-FileHash <ZIP> -Algorithm SHA256` with the list.
 
-Morsetastic is free to use, copy and share, and is provided as-is without warranty.
+## Features
+
+- Single-character practice, random character groups, words and callsigns.
+- Selectable letters, numbers and symbols, with Default, lesson and Custom sets.
+- Adaptive practice that revisits characters needing more work, with bars
+  showing their training priority.
+- Adjustable speed, tone, character spacing and repeat timing.
+- Options to repeat after errors and hide the transmitted character.
+- Timed exercises, per-character statistics, copy timing and saved reports.
+- English and Polish interface, help and reports, with built-in English fallback.
+- A choice of system appearance or the Morsetastic light-blue theme.
+- Audio-output selection and saved practice settings.
+
+## Lessons
+
+Choose Default, a named lesson or your own Custom character selection in
+Configuration. Each lesson lists the characters it includes.
+
+Lessons compare similar-sounding characters alongside contrasting sounds to
+help you hear the differences. Letters and numbers are mixed, with combinations
+such as S/H/5 and U/V/4; other sets introduce symbols alongside letters and
+numbers. The aim is to recognise each character's rhythm, rather than count
+its dots and dashes.
+
+There is no compulsory order, pass mark or automatic advancement. Choose a set
+you find useful and revisit difficult combinations as needed. Lessons change
+the selected characters, not your chosen speed, spacing or exercise settings.
+
+In Words mode, only words using active characters are eligible. If no words
+match, choose another file or a wider character selection.
+
+## Practice Files
+
+Downloads include English and Polish word lists and a callsign list:
+
+| File | Practice |
+| --- | --- |
+| `default_words.txt` | Default English words |
+| `callsigns.txt` | Callsigns |
+| `words400.txt` | Additional English words |
+| `wyrazy100.txt` | Polish words |
+| `wyrazy400.txt` | Additional Polish words |
+
+These files sit beside the executable. Choose Configuration > Load word file
+to use a supplied list or load your own plain-text file. Polish practice words
+replace diacritics with plain alphabet letters for CW; for example, `dzien`
+and `czlowiek` are intentional CW spellings.
+
+## Inspiration and Credits
+
+- G4ILO's Morse Machine inspired the adaptive single-character training idea.
+- RUFZ.XP, by Mathias Kolpe, DL4MM, and Alessandro Vitiello, IV3XYM, inspired
+  the string/callsign-copy direction.
+- Morsetastic is created by M0JWT and shaped by an interest in CW practice
+  and amateur radio.
+
+## Licence
+
+Morsetastic is free to use, copy and share. I hope you enjoy the program and
+find it useful. It is provided as-is, without warranty. Feedback is welcome.
