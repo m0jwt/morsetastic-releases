@@ -1,14 +1,13 @@
 # Morsetastic CW Trainer
 
-**Feel the rhythm of CW and learn to hear the melody of each character.**
+**Hear the melody of CW in every character and word.**
 
-Morsetastic is a simple CW reception trainer for Linux and Windows. It helps
-beginners build confidence and experienced operators keep their reception sharp,
-with focused practice in characters, groups, words and callsigns.
+Morsetastic is a simple CW reception trainer for Linux and Windows. You can use
+it to learn Morse or keep your reception sharp, practising individual characters,
+groups, words and callsigns.
 
-The aim is simple: make CW practice feel less like a test and more like
-building a useful radio skill one sound at a time. Short, focused sessions help
-you recognise character rhythms and revisit the sounds that need more practice.
+Choose a lesson or select your own characters, and adjust the speed and spacing
+to suit you. Characters you find difficult come up more often.
 
 ## Downloads
 
